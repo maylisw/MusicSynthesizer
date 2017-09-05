@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MusicSynthesizer</string>
+    <string-array name="notes_array">
+        <item>A</item>
+        <item>BB</item>
+        <item>B</item>
+        <item>C</item>
+        <item>CS</item>
+        <item>D</item>
+        <item>DS</item>
+        <item>E</item>
+        <item>F</item>
+        <item>FS</item>
+        <item>G</item>
+        <item>GS</item>
+        <item>AH</item>
+    </string-array>
+</resources>
