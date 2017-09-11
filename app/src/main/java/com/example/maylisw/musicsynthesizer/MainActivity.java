@@ -9,7 +9,7 @@ import android.widget.NumberPicker;
 import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button buttonA, buttonBB, buttonB, buttonC, buttonCS, buttonD, buttonDS, buttonE, buttonF, buttonFS, buttonG, buttonGS, buttonAH, playScales, twinkleTwinkle;
+    private Button buttonA, buttonBB, buttonB, buttonC, buttonCS, buttonD, buttonDS, buttonE, buttonF, buttonFS, buttonG, buttonGS, buttonAH, playScales, twinkleTwinkle, playSong;
     private MediaPlayer aNote, bbNote, bNote, cNote, csNote, dNote, dsNote, eNote, fNote, fsNote, gNote, gsNote, aHighNote, bHighNote, csHighNote, dHighNote, eHighNote, fsHighNote;
     private Spinner whichNote;
     private NumberPicker howManyTimes;
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonAH.setOnClickListener(this);
         playScales.setOnClickListener(this);
         twinkleTwinkle.setOnClickListener(this);
+        playSong.setOnClickListener(this);
     }
 
     public void wireMeUp(){
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         whichNote = (Spinner) findViewById(R.id.which_note_is_played);
         howManyTimes = (NumberPicker) findViewById(R.id.number_of_times_note_is_played);
         playScales = (Button) findViewById(R.id.play_scale);
+        playSong = (Button) findViewById(R.id.song);
         howManyTimes.setMinValue(1);
         howManyTimes.setMaxValue(10);
     }
@@ -160,7 +162,82 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     e.printStackTrace();
                 }
                 break;
+            case R.id.song:
+                try {
+                    playSongForMe();
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
         }
+    }
+
+    private void playSongForMe() throws InterruptedException { //plays frere jacques
+        int t = 350;
+        for(int i=0; i<2;i++) {
+            cNote.seekTo(0);
+            cNote.start();
+            Thread.sleep(t);
+
+            dNote.seekTo(0);
+            dNote.start();
+            Thread.sleep(t);
+            eNote.seekTo(0);
+            eNote.start();
+            Thread.sleep(t);
+            cNote.seekTo(0);
+            cNote.start();
+            Thread.sleep(t);
+        }
+        //second line
+        for(int i=0;i<2; i++) {
+            eNote.seekTo(0);
+            eNote.start();
+            Thread.sleep(t);
+            fNote.seekTo(0);
+            fNote.start();
+            Thread.sleep(t);
+            gNote.seekTo(0);
+            gNote.start();
+            Thread.sleep(t);
+        }
+        //thrid line
+        for(int i = 0; i<2;i++) {
+            gNote.seekTo(0);
+            gNote.start();
+            Thread.sleep(t);
+            aNote.seekTo(0);
+            aNote.start();
+            Thread.sleep(t);
+            gNote.seekTo(0);
+            gNote.start();
+            Thread.sleep(t);
+            fNote.seekTo(0);
+            fNote.start();
+            Thread.sleep(t);
+            eNote.seekTo(0);
+            eNote.start();
+            Thread.sleep(t);
+            cNote.seekTo(0);
+            cNote.start();
+            Thread.sleep(t);
+        }
+        //fourth line
+        for(int i = 0; i<2; i++){
+            cNote.seekTo(0);
+            cNote.start();
+            Thread.sleep(t);
+            gNote.seekTo(0);
+            gNote.start();
+            Thread.sleep(t);
+            cNote.seekTo(0);
+            cNote.start();
+            Thread.sleep(t);
+        }
+
+
+
+
+
     }
 
     public void playMeALot(View view) throws InterruptedException {
