@@ -13,7 +13,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="8dp"
         android:text="A"
         app:layout_constraintBottom_toTopOf="@+id/button_b"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -54,7 +54,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="-48dp"
+        android:layout_marginTop="-3dp"
         app:layout_constraintTop_toBottomOf="@+id/button_f" />
 
     <Button
@@ -123,7 +123,7 @@
         app:layout_constraintHorizontal_bias="0.25"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="-8dp"
         app:layout_constraintTop_toBottomOf="@+id/button_a" />
 
     <Button
@@ -154,7 +154,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/button_b"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
@@ -211,7 +211,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_ds"
@@ -261,7 +261,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
+        app:layout_constraintVertical_bias="0.842" />
 
     <Button
         android:id="@+id/play_note"
@@ -278,7 +278,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921" />
+        app:layout_constraintVertical_bias="0.852" />
 
     <Button
         android:id="@+id/play_scale"
@@ -294,7 +294,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <Button
         android:id="@+id/twinkle_twinkle"
@@ -305,12 +305,12 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="Twinkle, Twinkle"
-        android:textSize="10sp"
+        android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.982" />
 
 </android.support.constraint.ConstraintLayout>
