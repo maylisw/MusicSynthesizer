@@ -172,12 +172,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void playSongForMe() throws InterruptedException { //plays frere jacques
-        int t = 350;
+        int t = 400;
         for(int i=0; i<2;i++) {
             cNote.seekTo(0);
             cNote.start();
             Thread.sleep(t);
-
             dNote.seekTo(0);
             dNote.start();
             Thread.sleep(t);
